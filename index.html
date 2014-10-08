@@ -1,0 +1,27 @@
+<!doctype>
+<html>
+    <head>
+        <title>Q</title>
+    </head>
+    <body ng-app="MyApp">
+
+        <div ng-controller="MyCtrl">
+            {{locationSunnyVale}}<br>
+            {{tempSunnyVale}} degrees
+            <br><br>
+            {{locationApex}}<br>
+            {{tempApex}} degrees
+        </div>
+
+        <br><br><br><br>
+        <hr>
+        <div ng-controller="SecondCtrl">
+            {{weather.temp}}<br>
+            {{weather.location}}
+        </div>
+
+        <script src="app/components/angular/angular.js"></script>
+        <script src="app/components/angular-resource/angular-resource.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
